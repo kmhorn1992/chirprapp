@@ -1,0 +1,9 @@
+<ng-container *ngIf='!!chirp'>
+  <h2>Chirp from {{chirp.name}}</h2>
+</ng-container>
+<mat-card *ngIf="!!chirp" class='chirp-card'>
+    <mat-card-title>{{ chirp.name }}</mat-card-title>
+    <mat-card-subtitle>@{{chirp.user}}</mat-card-subtitle>
+    <mat-card-content><p>{{ chirp.message }}</p></mat-card-content>
+</mat-card>
+<button mat-button color='primary' [routerLink]="['/list']">BACK</button>

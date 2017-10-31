@@ -1,0 +1,18 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<mat-toolbar color="primary">
+  <span>CHIRPER</span>
+
+  <span class="example-fill-remaining-space"></span>
+
+  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+
+</mat-toolbar>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item routerLink='/chirp-form'>Chirp</button>
+  <button mat-menu-item routerLink='/list'>Post</button>
+  <button mat-menu-item routerLink='/login'>Login</button>
+
+</mat-menu>
+
+<router-outlet></router-outlet>
